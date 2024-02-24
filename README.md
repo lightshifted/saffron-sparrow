@@ -3,6 +3,59 @@
 
 The Synthetic Medical Records Generator API provides an interface for generating synthetic medical records based on provided ICD (International Classification of Diseases) codes and CPT (Current Procedural Terminology) codes. This API leverages OpenAI API to generate text that simulates medical record entries, offering a valuable tool for research, training, and software testing within the healthcare industry. The API is built using FastAPI and integrates with Hugging Face's `datasets` library to access enriched medical data.
 
+<details>
+<summary>Example Output</summary>
+
+
+```text
+[Index] Primary Care Visit [Index]
+Date: 04/12/2023 Time: 10:45 AM
+Provider: Dr. _______, MD
+Department: Family Medicine
+
+Patient Information
+Age: 34 years old
+Gender: Female
+
+Chief Complaint: "My nose won't stop running, and my eyes are so itchy."
+
+History of Present Illness
+Patient reports onset of nasal congestion and itchy eyes approximately 2 weeks ago which coincides with the start of the spring season. Symptoms seem to worsen when outdoors. No history of fever, cough, or other systemic symptoms. Patient has tried over-the-counter antihistamines with minimal relief.
+
+Allergies: No known drug allergies. Seasonal allergies to pollen.
+
+Past Medical History
+- Seasonal allergic rhinitis
+
+Current Medications: 
+- OTC Cetirizine 10 mg daily
+
+Review of Systems
+Allergic/Immunologic: Reports seasonal allergies. Negative for food allergies.
+ENT: Reports nasal congestion, itchy eyes, and sneezing. Negative for sore throat, ear pain, or hearing loss.
+Respiratory: Negative for shortness of breath, wheezing, or cough.
+The rest of the systems review is unremarkable.
+
+Physical Examination
+Vital Signs: BP 120/78 mmHg, Heart Rate 72 bpm, Temp 98.6 °F, Resp 16/min
+ENT: Nasal mucosa swollen and pale, clear nasal discharge, no sinus tenderness, conjunctivae are mildly erythematous and edematous.
+Lungs: Clear to auscultation bilaterally. No wheezes, crackles, or rhonchi.
+The remainder of the physical exam is within normal limits.
+
+Assessment/Plan
+- Diagnosis: Allergic rhinitis, exacerbated by pollen exposure.
+- Continue daily antihistamine (Cetirizine 10 mg daily). Consider switching to a different antihistamine if symptoms persist.
+- Start intranasal corticosteroid (Fluticasone propionate 50 mcg/spray, one spray in each nostril daily) for better control of nasal symptoms.
+- Consider adding over-the-counter artificial tears to alleviate itchy and red eyes.
+- Patient educated on avoiding outdoor activities during high pollen days and keeping windows closed to minimize exposure.
+- Follow-up: Return to clinic in 4 weeks for symptom reevaluation or sooner if symptoms worsen.
+
+Dr. _______, MD
+Family Medicine
+04/12/2023
+```
+</details>
+
 ## Prerequisites
 Before using this API, ensure the following requirements are met:
 - Python 3.8+ is installed.
