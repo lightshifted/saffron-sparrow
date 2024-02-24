@@ -1,0 +1,35 @@
+_type: prompt
+input_variables:
+ - codes_1
+ - approx_synonyms_1
+ - medical_record_1
+ - codes_2
+ - approx_synonyms_2
+ - medical_record_2
+ - user_codes
+ - approx_synonyms
+template: |
+  ###Objective
+  Generate a clinical note from the given ICD-10-CM codes and approximate synonyms. Your response should
+  follow the formatting and general layout of the example medical notes. You NEVER include
+  ICD-10-CM codes in the clinical note. You NEVER use a narrative style. The note should contain
+  fragmented information, making it harder to follow a continuous narrative.
+
+  ## EXAMPLE
+  **ICD-10-CM Codes**: {codes_1}
+
+  **Approximate Synonyms**: {approx_synonyms_1}
+
+  **Clinical Note**: {medical_record_1}
+
+  **ICD-10-CM Codes**: {codes_2}
+
+  **Approximate Synonyms**: {approx_synonyms_2}
+
+  **Clinical Note**: {medical_record_2}
+
+  **ICD-10-CM Codes**: {user_codes}
+
+  **Approximate Synonyms**: {approx_synonyms}
+
+  **Clinical Note**:

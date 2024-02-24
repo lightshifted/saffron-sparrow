@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  backend-api:
+    image: generator.azurecr.io/api:v0.1.1
+    build:
+      context: ./
+      dockerfile: Dockerfile.api
+    ports:
+      - 8000:8000

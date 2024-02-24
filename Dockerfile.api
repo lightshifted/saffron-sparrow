@@ -1,0 +1,27 @@
+# Use a Python image with Poetry pre-installed as the base image
+FROM thehale/python-poetry
+
+# Update package lists for upgrades and new package installations, and install curl and pip. Clean up after to reduce image size.
+RUN apt-get update && apt-get install -y curl python3-pip && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory in the Docker image to '/app'. All subsequent commands will be run from this directory.
+WORKDIR /app
+
+# Copy the Poetry configuration files into our working directory. This allows Docker to cache the installed dependencies if these files do not change between builds.
+COPY pyproject.toml poetry.lock ./
+
+RUN apt-get -y install curl build-essential gcc make && curl https://sh.rustup.rs -sSf | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+# Configure Poetry to not create a virtual environment and install the project dependencies.
+RUN poetry config virtualenvs.create false \
+    && poetry install --no-interaction --no-ansi
+
+# Copy the rest of our application code into the Docker image.
+COPY . .
+
+# Expose port 8000 in the Docker image. This allows external processes to connect to our application at this port.
+EXPOSE 8000
+
+# Define the command to start our application. This uses Poetry to run Uvicorn, with our application on host 0.0.0.0 and port 8000.
+CMD ["poetry", "run", "uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
