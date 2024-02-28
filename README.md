@@ -129,7 +129,7 @@ To use the API, send a POST request to `/api/generate/records` with a JSON body 
 Example request body:
 ```json
 {
-  "model": "gpt-3.5-turbo-1106",
+  "model": "gpt-4-0125-preview",
   "messages": [
     {
       "role": "doctor",
@@ -146,7 +146,7 @@ curl --location --request POST 'http://localhost:8000/api/generate/records' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --data-raw '{
-    "model":"gpt-3.5-turbo-1106",
+    "model":"gpt-4-0125-preview",
     "messages": [
         {
             "role": "user",
