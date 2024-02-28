@@ -8,51 +8,61 @@ The Synthetic Medical Records Generator API provides an interface for generating
 
 
 ```text
-[Index] Primary Care Visit [Index]
-Date: 04/12/2023 Time: 10:45 AM
-Provider: Dr. _______, MD
-Department: Family Medicine
+[Index] Visit Summary [Index]
+Visit Summary
+Admitting Diagnosis: Allergic rhinitis due to pollen
+Discharge Diagnosis: Same as admitting diagnosis
+Patient is a 28-year-old with no significant past medical history presenting for evaluation of persistent nasal congestion, sneezing, and itchy eyes worsened during spring. Reports symptoms consistent with seasonal allergies, exacerbated by pollen exposure.
 
-Patient Information
-Age: 34 years old
-Gender: Female
+Discharge Exam:
+BP: 120/78
+Temp: 36.6 °C (97.9 °F)
+Pulse: 72
+Resp: 14
+SpO2: 98%
+Constitutional: No acute distress, well-developed, well-nourished
+ENT: Nasal mucosa edematous, clear rhinorrhea noted. No nasal polyps.
+Eyes: Conjunctival erythema, no discharge
+Respiratory: Clear to auscultation bilaterally, no wheezes
+Skin: No rash noted
 
-Chief Complaint: "My nose won't stop running, and my eyes are so itchy."
+Complications: None
+Condition upon Discharge: Stable, symptoms improved with initial treatment
 
-History of Present Illness
-Patient reports onset of nasal congestion and itchy eyes approximately 2 weeks ago which coincides with the start of the spring season. Symptoms seem to worsen when outdoors. No history of fever, cough, or other systemic symptoms. Patient has tried over-the-counter antihistamines with minimal relief.
+[Index] History and Physical [Index]
+Physical Examination on Admission:
+Constitutional: Alert, oriented, in no acute distress
+ENT: Bilateral nasal congestion, mucosa swollen, clear discharge
+Eyes: Watering, itchy, red conjunctiva
+Respiratory: Breathing comfortably, no use of accessory muscles
+Skin: No hives or eczematous changes
 
-Allergies: No known drug allergies. Seasonal allergies to pollen.
+Allergies: No known drug allergies
+Medications Upon Admission: None
 
-Past Medical History
-- Seasonal allergic rhinitis
+Social History: Non-smoker. Works as an elementary school teacher. No pets at home. Reports increased outdoor activities during spring months.
 
-Current Medications: 
-- OTC Cetirizine 10 mg daily
+Review of Systems:
+Constitutional: Denies fever, weight loss
+Respiratory: Reports sneezing, nasal congestion, occasional cough
+ENT: Itchy throat, itchy eyes, clear rhinorrhea
+Skin: Denies any rashes or itching
 
-Review of Systems
-Allergic/Immunologic: Reports seasonal allergies. Negative for food allergies.
-ENT: Reports nasal congestion, itchy eyes, and sneezing. Negative for sore throat, ear pain, or hearing loss.
-Respiratory: Negative for shortness of breath, wheezing, or cough.
-The rest of the systems review is unremarkable.
+Assessment & Plan:
+The patient presents with symptoms consistent with allergic rhinitis exacerbated by pollen exposure. Plan to start non-sedating antihistamine and intranasal corticosteroid spray for symptom control. Discussed avoidance of known allergens, use of air purifiers, and changing clothes after spending time outdoors during high pollen days. Follow-up in 2 weeks to reassess symptom control and adjust treatment as necessary.
 
-Physical Examination
-Vital Signs: BP 120/78 mmHg, Heart Rate 72 bpm, Temp 98.6 °F, Resp 16/min
-ENT: Nasal mucosa swollen and pale, clear nasal discharge, no sinus tenderness, conjunctivae are mildly erythematous and edematous.
-Lungs: Clear to auscultation bilaterally. No wheezes, crackles, or rhonchi.
-The remainder of the physical exam is within normal limits.
+Education provided regarding the identification and avoidance of trigger factors, importance of medication adherence, and possible side effects of prescribed medications.
 
-Assessment/Plan
-- Diagnosis: Allergic rhinitis, exacerbated by pollen exposure.
-- Continue daily antihistamine (Cetirizine 10 mg daily). Consider switching to a different antihistamine if symptoms persist.
-- Start intranasal corticosteroid (Fluticasone propionate 50 mcg/spray, one spray in each nostril daily) for better control of nasal symptoms.
-- Consider adding over-the-counter artificial tears to alleviate itchy and red eyes.
-- Patient educated on avoiding outdoor activities during high pollen days and keeping windows closed to minimize exposure.
-- Follow-up: Return to clinic in 4 weeks for symptom reevaluation or sooner if symptoms worsen.
+Prescriptions Given at Discharge:
+1. Fexofenadine 180 mg orally once daily
+2. Fluticasone propionate nasal spray, 50 mcg per nostril once daily
 
-Dr. _______, MD
-Family Medicine
-04/12/2023
+Follow-Up:
+Schedule follow-up appointment in 2 weeks with primary care physician to monitor progression and adjust medications if needed. 
+
+Instructions for acute exacerbations include over-the-counter saline nasal spray for additional relief and contacting healthcare provider if symptoms worsen or if experiencing side effects of medications.
+
+Electronically Signed by Dr. _____ at [date/time]
 ```
 </details>
 
